@@ -162,7 +162,7 @@ body{
 }
 #menu-icon{
     font-size: 3.6rem;
-    color: var(--text-color);
+    color: aqua;
     display: none;
 }
 .hime-img {
@@ -176,6 +176,7 @@ body{
     align-items: center;
     gap: 2rem;
     background-color: rgb(46, 45, 45);
+    height: 100vh;
 }
 .about-img img {
     width: 35vw;
@@ -211,4 +212,106 @@ body{
 }
 .btn:hover {
     box-shadow: 0 0 5px cyan;
+}
+.service{
+    height: 100vh;
+    background-color: rgb(22, 21, 21);
+}
+.service h2{
+    margin-bottom: 5rem;
+}
+.services-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+.services-container .services-box {
+    flex: 1 1 30rem;
+    background-color: rgb(49, 45, 45);
+    padding: 3rem 2rem 4rem;
+    border-radius: 2rem;
+    text-align: center;
+    border: 5px solid rgb(49, 45, 45)k;
+    transition: 1s ease;
+}
+.services-container .services-box:hover{
+     border: 5px solid  #0ef;
+     transform: scale(1.02);
+}
+.services-box i{
+    font-size: 7rem;
+    color: aqua
+
+}
+.services-box h3{
+    font-size: 40px
+}
+.services-box p{
+    font-size: 1 6rem;
+    margin: 1rem 0 3rem;
+}
+.service span{
+    color: aqua;
+}
+.portfolio{
+    background-color: rgb(46, 45, 45);
+    margin-bottom: 20px;
+}
+.portfolio h2 {
+    margin-bottom: 4rem;
+}
+.portfolio-container{
+     display: grid;
+     grid-template-columns: repeat(3, 1fr);
+     align-items: center;
+     gap: 2.5rem;
+     margin-left: 70px;
+     margin-right: 70px;
+}
+.portfolio-container .portfolio-box{
+    position: relative;
+    border-radius: 2rem;
+    box-shadow: 0 0 1rem rgb(109, 122, 122);
+    overflow: hidden;
+    display: flex;
+    height: 400px;
+    width: 450px;
+}
+.portfolio-box img {
+    width: 100%;
+}
+.portfolio-box .portfolio-layer {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgb(0, 0, 0, .1),aqua);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 0 4rem;
+}
+.portfolio-layer h2 {
+    font-size: 3rem;
+}
+.portfolio-layer p{
+    font-size: 1.6rem;
+    margin: 3rem 0 1rem;
+}
+.portfolio-layer a{
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    height: 5rem;
+    background: aqua;
+    border-radius: 50%;
+
 }
